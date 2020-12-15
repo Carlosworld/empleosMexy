@@ -1,7 +1,11 @@
+<?php
+include_once 'templates/header.php'
+ ?>
+
 <body class="hold-transition login-page">
     <div class="login-box">
       <div class="login-logo">
-        <a href="../index.php"><b>GDL</b>WebCamp</a>
+        <a href="../index.php"><b>Empleo</b>Mexy</a>
       </div>
       <!-- /.login-logo -->
       <div class="card">
@@ -39,3 +43,7 @@
       </div>
     </div>
     <!-- /.login-box -->
+    <?php
+    include_once 'templates/footer.php';
+    include_once 'templates/footer-scripts.php';
+    ?>
