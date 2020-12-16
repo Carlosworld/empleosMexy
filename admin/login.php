@@ -1,4 +1,10 @@
 <?php
+// session_start();
+// $cerrar_sesion = $_GET['cerrar_sesion'];
+// if(isset($cerrar_sesion)){
+//   $session_sestroy();
+// }
+
 include_once 'templates/header.php'
  ?>
 
@@ -44,6 +50,5 @@ include_once 'templates/header.php'
     </div>
     <!-- /.login-box -->
     <?php
-    include_once 'templates/footer.php';
     include_once 'templates/footer-scripts.php';
     ?>

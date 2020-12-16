@@ -298,7 +298,7 @@ p {
 	}
 }
 
-/*!* pantalla menor de 800px *!
+/* !* pantalla menor de 800px *! */
 @media (max-width: 1366px) {
 	#container #section-2 #section-2-col-img-1,
 	#container #section-2 #section-2-col-img-2,
@@ -306,7 +306,7 @@ p {
 	#container #section-2 #section-2-col-img-4 {
 		background-size: 290%;
 	}
-}*/
+}
 
 /* pantalla mayor de 800px */
 @media (min-width: 800px) {
