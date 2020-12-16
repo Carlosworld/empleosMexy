@@ -10,8 +10,9 @@ $(document).ready(function(){
     url: "login-admin.php",
     dataType: 'json',
     success: function(data) {
-      console.log(data);
+      // console.log(data);
     var resultado = data;
+    // console.log(resultado);
     if(resultado.resultado == 'exito') {
                   swal(
                       'Login Exitoso' ,

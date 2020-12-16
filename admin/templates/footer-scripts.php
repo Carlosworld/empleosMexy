@@ -35,7 +35,7 @@
 
 <script type="text/javascript" src="assets/js/login-ajax.js"></script>
 <!-- SweetAlert2 -->
-<script src="assets/sweetalert2/sweetalert2.min.js"></script>
+<!-- <script src="assets/sweetalert2/sweetalert2.min.js"></script> -->
 
 
 </body>
