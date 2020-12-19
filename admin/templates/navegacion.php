@@ -5,7 +5,7 @@
          alt="AdminLTE Logo"
          class="brand-image img-circle elevation-3"
          style="opacity: .8">
-    <span class="brand-text font-weight-light"><b>ICA</b>MAR</span>
+    <span class="brand-text font-weight-light"><b>Administrador </b>web</span>
   </a>
   <!-- Sidebar -->
   <div class="sidebar">

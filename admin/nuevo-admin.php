@@ -39,7 +39,8 @@ include_once 'templates/navegacion.php';
                   </div>
                     <!-- form start -->
                     <div class="card-body">
-                    <form role="form" name="guardar-registro" id="guardar-registro" method="post" action="modelo-admin.php">
+                      <!-- action="insertar-admin.php" -->
+                    <form role="form" name="crear-admin" id="crear-admin" method="post" >
                       <div class="card-body">
                         <div class="form-group">
                           <label for="usuario">Usuario: </label>
@@ -57,51 +58,51 @@ include_once 'templates/navegacion.php';
                       <!-- /.card-body -->
 
                        <div class="card-footer">
-                        <input type="hidden" name="registro" value="nuevo">
+                        <input type="hidden" name="agregar-admin" value="1">
                         <button type="submit" class="btn btn-primary">Añadir</button>
                        </div>
                     </form>
 
                     <?php
 
-                    if(isset($_POST['submit'])):
-                          $usuario = $_POST['usuario'];
-                          $password = $_POST['password'];
-
-                          if(strlen($usuario) < 5):
-                                echo "El nombre del usuario debe ser más largo";
-                          else:
-
-                                $opciones = array(
-                                  'cost' => 12
-                                 );
-
-                                 $hashed_password = passwor_hash($password, PASSWORD_BCRYPT,  $opciones);
-
-                                try {
-                                  require_once('includes/funciones/bd_conexion.php');
-                                  $stmt = $conn->prepare("INSERT INTO administrador (usuario, hash_pass) VALUES (?,?)");
-                                  $stmt = $bind_param("ss", $usuario, $hashed_password);
-                                  $stmt->bind_param("ss", $usuario, $hashed_password);
-
-                                  $stmt->execute();
-                                  if ($stmt->error):
-                                    echo "<div class = 'mensaje error'>";
-                                    echo "Hubo un error";
-                                    echo "</div>";
-                                  else:
-                                    echo "<div class = 'mensaje'>";
-                                    echo "Se insertó correctamente el usuario";
-                                    echo "</div>";
-                                  endif;
-                                  $stmt->close();
-                                  $conn->close();
-                                } catch (\Exception $e) {
-                                  echo "Error:" . $e->getMessage();
-                                }
-                          endif;
-                    endif;
-  ?>
+  //                   if(isset($_POST['submit'])):
+  //                         $usuario = $_POST['usuario'];
+  //                         $password = $_POST['password'];
+  //
+  //                         if(strlen($usuario) < 5):
+  //                               echo "El nombre del usuario debe ser más largo";
+  //                         else:
+  //
+  //                               $opciones = array(
+  //                                 'cost' => 12
+  //                                );
+  //
+  //                                $hashed_password = passwor_hash($password, PASSWORD_BCRYPT,  $opciones);
+  //
+  //                               try {
+  //                                 require_once('includes/funciones/bd_conexion.php');
+  //                                 $stmt = $conn->prepare("INSERT INTO administrador (usuario, hash_pass) VALUES (?,?)");
+  //                                 $stmt = $bind_param("ss", $usuario, $hashed_password);
+  //                                 $stmt->bind_param("ss", $usuario, $hashed_password);
+  //
+  //                                 $stmt->execute();
+  //                                 if ($stmt->error):
+  //                                   echo "<div class = 'mensaje error'>";
+  //                                   echo "Hubo un error";
+  //                                   echo "</div>";
+  //                                 else:
+  //                                   echo "<div class = 'mensaje'>";
+  //                                   echo "Se insertó correctamente el usuario";
+  //                                   echo "</div>";
+  //                                 endif;
+  //                                 $stmt->close();
+  //                                 $conn->close();
+  //                               } catch (\Exception $e) {
+  //                                 echo "Error:" . $e->getMessage();
+  //                               }
+  //                         endif;
+  //                   endif;
+  // ?>
 
 
 

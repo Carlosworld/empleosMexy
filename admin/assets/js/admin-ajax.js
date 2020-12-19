@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  $('#guardar-registro').on('submit', function(e){
+  $('#crear-admin').on('submit', function(e){
     e.preventDefault();
 
     var datos = $(this).serializeArray();

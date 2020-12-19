@@ -27,6 +27,6 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <!-- Sweetalert2 css -->
-  <!-- <script src="assets/sweetalert2/sweetalert2.min.css"></script>-->
+  <script src="assets/sweetalert2/sweetalert2.min.css"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </head>
